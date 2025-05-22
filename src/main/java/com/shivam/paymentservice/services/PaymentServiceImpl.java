@@ -6,27 +6,15 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class PaymentServiceImpl implements PaymentService {
-    private PaymentGatewayChooserStrategy paymentGatewayChooserStrategy;
+    private final PaymentGatewayChooserStrategy paymentGatewayChooserStrategy;
 
     public PaymentServiceImpl(PaymentGatewayChooserStrategy paymentGatewayChooserStrategy){
         this.paymentGatewayChooserStrategy = paymentGatewayChooserStrategy;
     }
 
     @Override
-    public String createPaymentLink(Long amount,
-                                    Long orderId,
-                                    String phoneNumber,
-                                    String name,
-                                    String email) {
-
+    public String createPaymentLink(Long amount, Long orderId, String phoneNumber, String name, String email) {
         PaymentGateway paymentGateway = paymentGatewayChooserStrategy.getBestPaymentGateway();
-
-        return paymentGateway.createPaymentLink(
-                amount,
-                orderId,
-                phoneNumber,
-                name,
-                email
-        );
+        return paymentGateway.createPaymentLink(amount, orderId, phoneNumber, name, email);
     }
 }

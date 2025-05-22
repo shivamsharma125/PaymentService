@@ -53,7 +53,7 @@ public class RazorpayPaymentGateway implements PaymentGateway {
             return paymentLink.get("short_url").toString();
 
         } catch (RazorpayException ex){
-            throw new RuntimeException(ex.getMessage());
+            throw new RuntimeException("Error while generating payment link");
         }
 
     }
