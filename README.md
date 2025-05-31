@@ -189,14 +189,6 @@ Body (raw JSON):
 
 ---
 
-## 👨‍💻 Author
-
-**\[Shivam Sharma]**
-Backend Developer | Java + Spring Boot
-[LinkedIn Profile](#) • [GitHub](#)
-
----
-
 ## 📌 Related Microservices
 
 * 🛒 **Product Service** – Manage product catalog
