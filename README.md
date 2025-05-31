@@ -194,7 +194,6 @@ Body (raw JSON):
 * 🛒 **Product Service** – Manage product catalog
 * 👤 **User Service** – Handle user registration and authentication
 * 📧 **Email Service** – Send transactional emails
-* 💳 **Payment Service** – Manage payments via Razorpay & Stripe
 * 🔍 **Service Discovery** – Eureka-based service registry
 
 ---
