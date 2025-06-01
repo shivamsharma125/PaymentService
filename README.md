@@ -16,7 +16,7 @@ This microservice is responsible for handling all payment-related operations wit
 ## 🛠️ Tech Stack
 
 * Java 17
-* Spring Boot 3.x
+* Spring Boot 3
 * Spring Web
 * Razorpay Java SDK
 * Stripe Java SDK
